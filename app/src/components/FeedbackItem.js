@@ -9,12 +9,7 @@ const FeedbackItem = ({ item, handleDelete }) => {
         <span>{item.rating}</span>
       </div>
       <button className="close" onClick={() => handleDelete(item.id)}>
-        <i
-          className="fa fa-close"
-          style={{
-            color: item.id % 2 === 0 ? "#fff" : "#00162b",
-          }}
-        ></i>
+        <i className="fa fa-close"></i>
       </button>
       <div className="text-display">
         <span>{item.text}</span>

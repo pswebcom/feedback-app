@@ -19,12 +19,34 @@ header {
 }
 
 .card {
-  width: 40%;
+  max-width: 50%;
+  min-width: 280px;
   margin: 0 auto;
   background-color: whitesmoke;
   position: relative;
   border-radius: 10px;
   margin-top: 2rem;
+}
+
+.card:nth-child(odd) {
+  background: #3545a7;
+  color: whitesmoke;
+}
+
+.card:nth-child(even) {
+  background: #daf7a6;
+}
+
+.fa {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.card:nth-child(odd) .fa {
+  color: #fff;
 }
 
 .feedback {
@@ -68,10 +90,10 @@ header {
   background-color: #575757;
 }
 
-.fa {
-  position: absolute;
-  right: 7px;
-  top: 5px;
-  font-size: 18px;
-  cursor: pointer;
+.feedback-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 1.5rem;
 }
