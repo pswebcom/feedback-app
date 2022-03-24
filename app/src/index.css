@@ -184,6 +184,20 @@ header {
   }
 }
 
+.star {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.rating-msg {
+  padding: 0.5rem 0;
+}
+
 @media (max-width: 550px) {
   .feedback-form {
     padding: 0.3rem 0.4rem 0.7rem 0.4rem;
