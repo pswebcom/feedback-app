@@ -14,6 +14,34 @@ html {
   font-family: "M PLUS 1", sans-serif;
 }
 
+.btn {
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  width: 100px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #202142;
+}
+
+.btn-secondary {
+  background: #ff6a95;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+.btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+  color: black;
+}
+
 header {
   background-color: #daf7a6;
   text-align: center;
@@ -109,6 +137,7 @@ header {
   max-width: 50%;
   color: #fff;
   padding: 1rem;
+  border-radius: 5px;
 }
 
 .feedback-form h2 {
@@ -131,15 +160,13 @@ header {
 }
 
 .feedback-form button {
-  width: 70px;
-  height: 30px;
-  background-color: #fff !important;
-  outline: none;
-  border: none;
   position: absolute;
   right: 5px;
-  top: 5px;
-  border: 1px solid gray;
+  top: 3px;
+}
+
+.message {
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 750px) {
