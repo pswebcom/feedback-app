@@ -4,6 +4,7 @@ body,
 html {
   background-color: #5d3fd3;
   font-family: "M PLUS 1", sans-serif;
+  box-sizing: border-box;
 }
 
 * {
@@ -19,10 +20,9 @@ header {
 }
 
 .feedback {
-  min-width: 300px;
+  min-width: 150px;
   margin: 0 auto;
-  margin-top: 5rem;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .card {
@@ -95,14 +95,80 @@ header {
 
 .feedback-stats {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 1rem 0;
   color: #fff;
   font-size: 1.5rem;
 }
 
+.feedback-form {
+  text-align: center;
+  margin: 4rem auto 0 auto;
+  background-color: #3445a7;
+  min-width: 700px;
+  max-width: 50%;
+  color: #fff;
+  padding: 1rem;
+}
+
+.feedback-form h2 {
+  margin-bottom: 1rem;
+}
+
+.feedback-form .input-group {
+  margin: 0 auto;
+  border: 1px solid green;
+  position: relative;
+}
+
+.feedback-form input {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.feedback-form button {
+  width: 70px;
+  height: 30px;
+  background-color: #fff !important;
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: 1px solid gray;
+}
+
 @media (max-width: 750px) {
   .card {
     min-width: 94% !important;
+  }
+
+  .feedback-form {
+    min-width: 100% !important;
+    margin: 0 auto;
+  }
+
+  header {
+    min-width: 99% !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .feedback-form {
+    padding: 0.3rem 0.4rem 0.7rem 0.4rem;
+  }
+  .feedback-form h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .feedback-stats h4 {
+    font-size: 1rem;
+    font-weight: 900;
   }
 }

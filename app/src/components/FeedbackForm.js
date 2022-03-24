@@ -3,9 +3,15 @@ import Card from "./shared/Card";
 
 const FeedbackForm = () => {
   return (
-    <div>
-      <h1>Form</h1>
-    </div>
+    <>
+      <form className="feedback-form">
+        <h2>How would you rate your experience ?</h2>
+        <div className="input-group">
+          <input type="text" placeholder="Write a review" />
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </>
   );
 };
 
