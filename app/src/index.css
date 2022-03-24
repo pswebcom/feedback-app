@@ -18,9 +18,16 @@ header {
   text-align: center;
 }
 
+.feedback {
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
 .card {
+  min-width: 700px;
   max-width: 50%;
-  min-width: 280px;
   margin: 0 auto;
   background-color: whitesmoke;
   position: relative;
@@ -47,10 +54,6 @@ header {
 
 .card:nth-child(odd) .fa {
   color: #fff;
-}
-
-.feedback {
-  margin-top: 5rem;
 }
 
 .num-display {
@@ -96,4 +99,10 @@ header {
   padding: 1rem 0;
   color: #fff;
   font-size: 1.5rem;
+}
+
+@media (max-width: 750px) {
+  .card {
+    min-width: 94% !important;
+  }
 }
