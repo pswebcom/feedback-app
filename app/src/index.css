@@ -128,7 +128,19 @@ header {
   min-height: 20px;
   max-width: 92%;
   margin: 0 auto;
-  padding: 0 0 1rem 0;
+  padding: 0 0 0.6rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  /* border: 1px solid yellow; */
+}
+
+.text-display-span {
+  min-width: 92%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  justify-content: center;
+  min-height: 100px;
 }
 
 .reverse {
@@ -183,12 +195,14 @@ header {
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: #f0f8ff;
+  border: none;
+  outline: none;
 }
 
 .feedback-form button {
   position: absolute;
   right: 2px;
-  top: 3px;
+  top: 4px;
   border-radius: 5px;
 }
 
@@ -235,8 +249,19 @@ input[type="radio"] {
 }
 
 @media (max-width: 420px) {
-  .feedback-stats h4 {
-    font-size: 1rem;
-    font-weight: 900;
+  .feedback-stats {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-form button {
+    position: static;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .card:first-child {
+    margin-top: 1rem;
   }
 }

@@ -16,7 +16,7 @@ const FeedbackItem = ({ item, handleDelete }) => {
 
       <i className="fa fa-close" onClick={() => handleDelete(item.id)}></i>
       <div className="text-display">
-        <span>{item.text}</span>
+        <span className="text-display-span">{item.text}</span>
       </div>
     </Card>
   );

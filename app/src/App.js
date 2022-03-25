@@ -23,13 +23,11 @@ const App = () => {
   return (
     <>
       <Header />
-      {/* <div className="container"> */}
       <div className="feedback">
         <FeedbackForm handleAdd={addFeedback} />
         <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>
-      {/* </div> */}
     </>
   );
 };
