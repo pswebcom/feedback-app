@@ -144,13 +144,24 @@ header {
   font-size: 1.5rem;
 }
 
+.baba {
+  background-color: black;
+}
+
 .feedback-form {
   text-align: center;
   margin: 4rem auto 0 auto;
   background-color: #3445a7;
+  background-color: #f8f8ff;
+  background-color: #f5fffa;
+  background-color: #f0f8ff;
+  /* background-color: #fafafa; */
+  background-color: #daf7a6;
   min-width: 700px;
   max-width: 50%;
   color: #fff;
+  color: #202142;
+
   padding: 1rem;
   border-radius: 5px;
 }
@@ -161,7 +172,6 @@ header {
 
 .feedback-form .input-group {
   margin: 0 auto;
-  border: 1px solid green;
   position: relative;
 }
 
@@ -172,12 +182,14 @@ header {
   border-radius: 5px;
   padding-left: 2rem;
   padding-right: 2rem;
+  background-color: #f0f8ff;
 }
 
 .feedback-form button {
   position: absolute;
-  right: 5px;
+  right: 2px;
   top: 3px;
+  border-radius: 5px;
 }
 
 .message {

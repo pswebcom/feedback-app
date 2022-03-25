@@ -27,9 +27,7 @@ const RatingSelect = ({ ratingProp, ratingNumberProp }) => {
             <FaStar
               className="star"
               color={
-                ratingIndex <= (clickRating || hoverRating)
-                  ? "#ffc107"
-                  : "#e4e5e9"
+                ratingIndex <= (clickRating || hoverRating) ? "#ffc107" : "#ccc"
               }
               onMouseEnter={() => setHoverRating(ratingIndex)}
               onMouseLeave={() => setHoverRating(null)}

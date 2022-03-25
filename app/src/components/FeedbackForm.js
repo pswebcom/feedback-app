@@ -13,8 +13,8 @@ const FeedbackForm = ({ handleAdd }) => {
     if (text === "") {
       setBtnDisabled(true);
       setMessage(null);
-    } else if (text !== "" && text.trim().length <= 10) {
-      setMessage("*Feedback should be minimum of 10 characters");
+    } else if (text !== "" && text.trim().length <= 20) {
+      setMessage("*Feedback should be minimum of 20 characters");
       setBtnDisabled(true);
     } else {
       setBtnDisabled(false);
@@ -27,7 +27,7 @@ const FeedbackForm = ({ handleAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (text.trim().length > 10) {
+    if (text.trim().length > 20) {
       const newFeedback = {
         text,
         rating,

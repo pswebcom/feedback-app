@@ -8,7 +8,6 @@ const FeedbackItem = ({ item, handleDelete }) => {
     <Card reverse={item.reverse} id={item.id}>
       {[...Array(item.rating)].map((i) => {
         return (
-          // <div className="fa-star-div">
           <span className="fa-star-span">
             <FaStar className="fa-star"></FaStar>
           </span>
