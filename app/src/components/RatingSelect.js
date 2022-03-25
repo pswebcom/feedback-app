@@ -2,43 +2,41 @@ import React from "react";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
-const RatingSelect = ({ ratingNumber }) => {
+const RatingSelect = ({ ratingProp, ratingNumberProp }) => {
   const [clickRating, setClickRating] = useState(null);
   const [hoverRating, setHoverRating] = useState(null);
 
-  const handleChange = (ratingValue) => {
-    setClickRating(ratingValue);
-    ratingNumber(ratingValue);
+  const handleChange = (value) => {
+    setClickRating(value);
+    ratingNumberProp(value);
   };
 
   return (
     <div>
       {[...Array(5)].map((star, i) => {
-        const ratingVal = i + 1;
+        const ratingIndex = i + 1;
+
         return (
-          <label key={ratingVal}>
+          <label key={ratingIndex}>
             <input
               type="radio"
               name="rating"
-              value={ratingVal}
-              onClick={() => handleChange(ratingVal)}
+              value={ratingIndex}
+              onClick={() => handleChange(ratingIndex)}
             />
             <FaStar
               className="star"
               color={
-                ratingVal <= (clickRating || hoverRating)
+                ratingIndex <= (clickRating || hoverRating)
                   ? "#ffc107"
                   : "#e4e5e9"
               }
-              onMouseEnter={() => setHoverRating(ratingVal)}
+              onMouseEnter={() => setHoverRating(ratingIndex)}
               onMouseLeave={() => setHoverRating(null)}
             />
           </label>
         );
       })}
-      <p className="rating-msg">
-        {clickRating ? `Your Rating is ${clickRating} out of 5 ` : ""}
-      </p>
     </div>
   );
 };

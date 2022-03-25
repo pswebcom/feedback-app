@@ -1,19 +1,19 @@
 const FeedbackData = [
   {
     id: 1,
-    rating: 10,
+    rating: 5,
     reverse: false,
     text: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ",
   },
   {
     id: 2,
-    rating: 6,
+    rating: 4,
     reverse: true,
     text: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ",
   },
   {
     id: 3,
-    rating: 7,
+    rating: 4,
     reverse: false,
     text: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ",
   },
@@ -25,19 +25,19 @@ const FeedbackData = [
   },
   {
     id: 5,
-    rating: 10,
+    rating: 2,
     reverse: false,
     text: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ",
   },
   {
     id: 6,
-    rating: 6,
+    rating: 3,
     reverse: true,
     text: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ",
   },
   {
     id: 7,
-    rating: 7,
+    rating: 4,
     reverse: false,
     text: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. ",
   },

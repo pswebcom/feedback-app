@@ -1,16 +1,21 @@
 import React from "react";
 import Card from "./shared/Card";
 import PropTypes from "prop-types";
+import { FaStar } from "react-icons/fa";
 
 const FeedbackItem = ({ item, handleDelete }) => {
   return (
     <Card reverse={item.reverse} id={item.id}>
-      <div className="num-display">
-        <span>{item.rating}</span>
-      </div>
-      <button className="close" onClick={() => handleDelete(item.id)}>
-        <i className="fa fa-close"></i>
-      </button>
+      {[...Array(item.rating)].map((i) => {
+        return (
+          // <div className="fa-star-div">
+          <span className="fa-star-span">
+            <FaStar className="fa-star"></FaStar>
+          </span>
+        );
+      })}
+
+      <i className="fa fa-close" onClick={() => handleDelete(item.id)}></i>
       <div className="text-display">
         <span>{item.text}</span>
       </div>
