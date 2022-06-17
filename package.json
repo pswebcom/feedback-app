@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "https://pswebcom.github.io/feedback-app/app",
+  "homepage": "https://pswebcom.github.io/feedback-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
