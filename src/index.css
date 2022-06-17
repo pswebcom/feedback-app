@@ -1,0 +1,267 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); */
+
+body,
+html {
+  background-color: #5d3fd3;
+  font-family: "M PLUS 1", sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+.btn {
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  width: 100px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #202142;
+}
+
+.btn-secondary {
+  background: #ff6a95;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+.btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+  color: black;
+}
+
+header {
+  background-color: #daf7a6;
+  text-align: center;
+}
+
+.feedback {
+  min-width: 150px;
+  margin: 0 auto;
+  padding: 0.8rem;
+}
+
+.card {
+  min-width: 700px;
+  max-width: 50%;
+  min-height: 100px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.card:nth-child(odd) {
+  background: #3545a7;
+  color: whitesmoke;
+}
+
+.card:nth-child(even) {
+  background: #daf7a6;
+}
+
+.fa {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.fa-star-span {
+  display: inline-block;
+  margin-left: 0.6rem;
+}
+
+.fa-star-span:first-child {
+  margin-left: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+.card:nth-child(odd) .fa-star,
+.card:nth-child(even) .fa-star {
+  color: #ffc107;
+}
+
+.num-display {
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin: -0.2rem;
+}
+
+.num-display span {
+  position: absolute;
+  font-weight: bold;
+}
+
+.num-display .fa-star {
+  color: #ffc107;
+}
+
+.text-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 0 0 0.6rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  /* border: 1px solid yellow; */
+}
+
+.text-display-span {
+  min-width: 92%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  justify-content: center;
+  min-height: 100px;
+}
+
+.reverse {
+  color: whitesmoke;
+  background-color: #575757;
+}
+
+.feedback-stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.baba {
+  background-color: black;
+}
+
+.feedback-form {
+  text-align: center;
+  margin: 4rem auto 0 auto;
+  background-color: #3445a7;
+  background-color: #f8f8ff;
+  background-color: #f5fffa;
+  background-color: #f0f8ff;
+  /* background-color: #fafafa; */
+  background-color: #daf7a6;
+  min-width: 700px;
+  max-width: 50%;
+  color: #fff;
+  color: #202142;
+
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.feedback-form h2 {
+  margin-bottom: 1rem;
+}
+
+.feedback-form .input-group {
+  margin: 0 auto;
+  position: relative;
+}
+
+.feedback-form input {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #f0f8ff;
+  border: none;
+  outline: none;
+}
+
+.feedback-form button {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  border-radius: 5px;
+}
+
+.message {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 750px) {
+  .card {
+    min-width: 94% !important;
+  }
+
+  .feedback-form {
+    min-width: 100% !important;
+    margin: 0 auto;
+  }
+
+  header {
+    min-width: 99% !important;
+  }
+}
+
+.star {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.rating-msg {
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 550px) {
+  .feedback-form {
+    padding: 0.3rem 0.4rem 0.7rem 0.4rem;
+  }
+  .feedback-form h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .feedback-stats {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-form button {
+    position: static;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .card:first-child {
+    margin-top: 1rem;
+  }
+}
